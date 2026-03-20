@@ -44,7 +44,7 @@ body {
   color: var(--text);
   background: var(--white);
   line-height: 1.9;
-  font-size: 17px;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -55,8 +55,8 @@ body {
 .cta-btn {
   display: inline-flex; align-items: center; gap: 10px;
   background: var(--green); color: var(--white);
-  font-size: 19px; font-weight: 700;
-  padding: 20px 44px; border-radius: 60px;
+  font-size: 20px; font-weight: 700;
+  padding: 22px 48px; border-radius: 60px;
   text-decoration: none; transition: all 0.25s;
   box-shadow: 0 4px 16px rgba(6,199,85,0.3);
 }
@@ -74,11 +74,11 @@ body {
   padding: 5px 14px; border-radius: 60px; margin-bottom: 14px;
 }
 .sec__title {
-  font-size: clamp(28px, 5vw, 40px);
+  font-size: clamp(30px, 5.5vw, 44px);
   font-weight: 900; line-height: 1.4; color: var(--blue-900);
   margin-bottom: 16px;
 }
-.sec__sub { font-size: 18px; color: var(--text-sub); max-width: 660px; line-height: 1.8; }
+.sec__sub { font-size: 20px; color: var(--text-sub); max-width: 660px; line-height: 1.8; }
 
 /* ============ LINE icon ============ */
 .line-icon { width: 20px; height: 20px; flex-shrink: 0; }
@@ -86,7 +86,7 @@ body {
 /* ============ HERO ============ */
 .hero {
   position: relative;
-  min-height: 620px;
+  min-height: 680px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -96,13 +96,13 @@ body {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   object-fit: cover;
-  object-position: 55% 35%;
+  object-position: center 20%;
   z-index: 0;
 }
 .hero__overlay {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.97) 35%, rgba(255,255,255,0.75) 55%, rgba(255,255,255,0) 70%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.4) 45%, rgba(255,255,255,0) 55%);
   z-index: 1;
 }
 .hero .container { position: relative; z-index: 2; padding: 80px 20px; max-width: none; padding-left: max(40px, calc((100vw - 1060px) / 2)); }
@@ -116,24 +116,24 @@ body {
   letter-spacing: 0.03em;
 }
 .hero__title {
-  font-size: clamp(32px, 6vw, 52px);
+  font-size: clamp(36px, 7vw, 58px);
   font-weight: 900; line-height: 1.3;
   color: var(--blue-900);
   margin-bottom: 28px;
   letter-spacing: -0.01em;
-  max-width: 480px;
+  max-width: 540px;
 }
 .hero__title em { font-style: normal; color: var(--blue-600); }
 .hero__headline {
-  font-size: clamp(20px, 3vw, 26px);
+  font-size: clamp(22px, 3.5vw, 30px);
   font-weight: 700; line-height: 1.6;
   color: var(--gray-800);
   margin-bottom: 16px;
-  max-width: 440px;
+  max-width: 500px;
 }
 .hero__sub {
-  font-size: 18px; color: var(--gray-800);
-  margin-bottom: 40px; max-width: 400px;
+  font-size: 20px; color: var(--gray-800);
+  margin-bottom: 40px; max-width: 460px;
 }
 .hero__note { font-size: 14px; color: var(--gray-600); margin-top: 14px; }
 
@@ -158,7 +158,7 @@ body {
   color: var(--blue-600); opacity: 0.15;
   position: absolute; top: 14px; right: 18px;
 }
-.pain-card__text { font-size: 18px; font-weight: 500; line-height: 1.75; color: var(--gray-800); }
+.pain-card__text { font-size: 19px; font-weight: 500; line-height: 1.75; color: var(--gray-800); }
 .pain__closing {
   text-align: center;
   font-size: clamp(24px, 4vw, 34px);
@@ -189,8 +189,8 @@ body {
   display: flex; align-items: center; justify-content: center;
   font-size: 22px;
 }
-.feat__title { font-size: 21px; font-weight: 900; color: var(--blue-900); margin-bottom: 10px; line-height: 1.5; }
-.feat__desc { font-size: 17px; color: var(--text-sub); line-height: 1.85; }
+.feat__title { font-size: 23px; font-weight: 900; color: var(--blue-900); margin-bottom: 10px; line-height: 1.5; }
+.feat__desc { font-size: 18px; color: var(--text-sub); line-height: 1.85; }
 
 /* ============ WHY PAID ============ */
 .wp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 32px; }
@@ -243,13 +243,13 @@ body {
 }
 .iv-card__summary {
   display: grid;
-  grid-template-columns: 1fr 140px;
+  grid-template-columns: 1fr 160px;
   gap: 24px;
   align-items: center;
   margin-bottom: 16px;
 }
 .iv-card__title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--blue-900);
   line-height: 1.6;
@@ -265,19 +265,19 @@ body {
   width: 120px; height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--blue-100);
+  border: 4px solid var(--blue-100);
   flex-shrink: 0;
 }
 .iv-card__info {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-sub);
 }
-.iv-card__info strong { color: var(--text); font-size: 16px; }
+.iv-card__info strong { color: var(--text); font-size: 18px; }
 .iv-card__toggle {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--blue-600);
 }
@@ -301,14 +301,14 @@ body {
   background: var(--orange-light);
   border-radius: 8px;
   padding: 16px 20px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--gray-800);
   line-height: 1.6;
   margin-bottom: 14px;
 }
 .iv-qa__a {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.9;
   color: var(--gray-600);
   padding: 0 6px;
@@ -404,8 +404,8 @@ body {
   .sec { padding: 52px 0; }
   .hero { min-height: 480px; }
   .hero .container { padding: 60px 20px; }
-  .hero__bg { object-position: 58% 30%; }
-  .hero__overlay { background: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.35) 100%); }
+  .hero__bg { object-position: 60% 20%; }
+  .hero__overlay { background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 45%, rgba(255,255,255,0.2) 100%); }
   .hero__title { max-width: none; }
   .hero__headline { max-width: none; }
   .hero__sub { max-width: none; }
@@ -423,7 +423,7 @@ body {
   .cta-btn { font-size: 16px; padding: 16px 32px; }
   .iv-card__summary { grid-template-columns: 1fr; }
   .iv-card__meta { flex-direction: row; justify-content: flex-start; }
-  .iv-card__photo { width: 90px; height: 90px; }
+  .iv-card__photo { width: 100px; height: 100px; }
   .iv-card__header { padding: 24px; }
   .iv-qa { padding: 0 24px 20px; }
 }
